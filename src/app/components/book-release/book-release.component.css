@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  margin: 0 20px;
+}
+
+.section__descrition {
+  padding: 10px;
+}
+
+.section__descrition-title {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.section__descrition-title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  border-bottom: 4px solid var(--yellow);
+  margin-left: 45%;
+}
+
+.section__image {
+  width: 40%;
+  height: auto;
+}
+
+.section__descrition-link {
+  background: var(--main-purple);
+  color: var(--white);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+}

@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 50px;
+  bottom: 0;
+  background-color: #c0c1c3;
+}
+
+.footer__divs {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer__title {
+  font-weight: 600;
+  color: var(--secondary-purple);
+  display: inline-block;
+  margin: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  display: block;
+}
+.footer__line-black {
+  background: black;
+  color: var(--white);
+  text-align: center;
+  height: 2rem;
+  padding-top: 8px;
+}

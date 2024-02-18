@@ -1,0 +1,30 @@
+.banner {
+  margin: 4rem 50px;
+  background-color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.card-title-detail {
+  color: var(--main-purple);
+}
+
+.card-text {
+  margin: 20px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.mat-card__link {
+  background: var(--main-purple);
+  color: var(--white);
+  font-size: 12px;
+}

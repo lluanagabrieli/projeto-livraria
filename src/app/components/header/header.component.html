@@ -1,0 +1,40 @@
+<mat-toolbar class="mat-elevation-z8 header" style="position: relative;">
+  <span><mat-icon class="header__icon">auto_stories</mat-icon>Library</span>
+  <span class="example-spacer"></span>
+  <button (click)="menu.toggle()" mat-icon-button class="header__button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-icon-button class="header__button">
+    <mat-icon>person</mat-icon>
+  </button>
+  <div class="header__navigation">
+    <a mat-button>Home</a>
+    <a mat-button>Acervo</a>
+    <a mat-button>Sobre nós</a>
+    <a mat-raised-button color="primary">Login</a>
+  </div>
+</mat-toolbar>
+
+<mat-drawer-container autosize class="container__menu" hasBackdrop="true">
+  <mat-drawer #menu opened="false" mode="side" class="container__menu-nav">
+    <mat-nav-list>
+      <mat-list-item>
+        <button mat-button class="list__item"><mat-icon>home</mat-icon> home</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="list__item"><mat-icon>library_books</mat-icon> acervo</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="list__item"><mat-icon>groupe</mat-icon> sobre nós</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="list__item"><mat-icon>login</mat-icon> login</button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div style="min-height: 50vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,45 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header {
+  background-color: var(--main-purple);
+}
+
+.header__icon {
+  font-size: 20px;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.container__menu {
+  position: absolute;
+  right: 0;
+}
+
+.container__menu-nav {
+  background-color: var(--secondary-purple);
+  width: 100vw;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.list__item {
+  font-size: 24px;
+}
+
+@media (min-width: 690px) {
+  .container__menu {
+    display: none;
+  }
+
+  .header__navigation {
+    display: flex;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
