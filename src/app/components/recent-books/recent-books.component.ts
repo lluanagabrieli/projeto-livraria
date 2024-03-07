@@ -7,7 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class RecentBooksComponent {
   swiper: any;
-  slidesPerView!: number;
+  slidesPerView: number = 3;
   screenWidth!: number;
 
   @HostListener('window:resize')

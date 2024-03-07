@@ -1,6 +1,7 @@
 .section {
   display: flex;
-  margin: 0 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section__descrition {
@@ -33,4 +34,26 @@
   border-radius: 4px;
   text-decoration: none;
   font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 690px) {
+  .section {
+    margin: 0 156px;
+  }
+
+  .section__image {
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .section__image {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1080px) {
 }

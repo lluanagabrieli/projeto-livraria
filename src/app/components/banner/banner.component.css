@@ -1,8 +1,13 @@
 .banner {
-  margin: 4rem 50px;
+  margin: 4rem 0;
   background-color: var(--white);
   padding: 20px;
   text-align: center;
+}
+
+.alinhamento {
+  display: flex;
+  justify-content: center;
 }
 
 .card-title {
@@ -27,4 +32,30 @@ img {
   background: var(--main-purple);
   color: var(--white);
   font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 320px) {
+  .banner {
+    margin: 4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .banner {
+    margin: 4rem 5rem;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .banner {
+    margin: 4rem 10rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .banner {
+    width: 700px;
+    margin: 4rem 10rem;
+  }
 }
